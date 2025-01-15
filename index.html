@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Random YouTube Redirect</title>
+</head>
+<body>
+  <script>
+    // List of YouTube URLs
+    const youtubeLinks = [
+      "https://www.youtube.com/watch?v=YZ13qxi2UVg",
+      "https://www.youtube.com/watch?v=cPzj0fzWo8w",
+      "https://www.youtube.com/watch?v=m_CrIu01SnM",
+      // Add more links here
+    ];
+
+    // Pick a random link from the list
+    const randomLink = youtubeLinks[Math.floor(Math.random() * youtubeLinks.length)];
+
+    // Immediately redirect the user
+    window.location.href = randomLink;
+  </script>
+</body>
+</html>
